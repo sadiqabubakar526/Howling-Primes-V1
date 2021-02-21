@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Fontawesome Icons-->
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        
+  <!-- Google fonts -->
+ 
+          <link href='https://fonts.googleapis.com/css?family=Cute Font|Actor|Abel|Akaya Kanadaka|Thasadith|Lobster|IBM Plex Sans|Quicksand|Indie Flower|Press Start 2P' rel='stylesheet'>
+          
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title id="title">Howling Primes
+</title>
+    
+              <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body onload="load()">
+        <header id="header">
+           <span onclick="more2()" style="float: left" id="st">
+               
+           <i class="fas fa-bars"></i>
+               
+           </span>
+            <span id="dwn1" onclick="down1()">
+               <i class="fas fa-chevron-down"></i>
+           </span>
+           <span>
+               &nbsp;&nbsp;
+           </span>
+           <span onclick="more()">
+               
+           <i class="fas fa-plus"></i>
+               
+           </span>
+          
+        </header>
+        <header id="header2">
+            <span>  <i onclick="switchTo(3).from(1)" class="far fa-keyboard"></i>        </span>
+            <span><i onclick="switchTo(1).from(2)" class="far fa-question-circle"></i></span>
+            <span><i onclick="switchTo(2).from(1)" class="fas fa-pencil-alt"></i></span>
+            <span><i onclick="switchTo(4).from(1)" class="fas fa-sort-numeric-down"></i></span>
+            <span>
+                <i onclick="switchTo(7).from(1)" class="fas fa-code"></i>
+            </span>
+            <span style="float:right" onclick="hmore()">
+               <i class="fas fa-times"></i>
+            </span>
+        </header>
+        <header id="header3">
+            <span onclick=" switchTo('5').from('1')">More Codes</span>
+            <span onclick=" switchTo('6').from('1')">Settings</span>
+            <span onclick="hmore2()" style="float:right">
+                 <i class="fas fa-times"></i>
+            </span>
+        </header>
+        <header id="header4">
+            <span onclick="i$(this.innerHTML)">113</span>
+            <span onclick="i$(this.innerHTML)">89</span>
+            <span onclick="i$(this.innerHTML)">96</span>
+            <span onclick="i$('')">Clear</span>
+        </header>
+        <main id="main">
+        
+        <section id="sec1">
+          <br><br>
+          <h2>What is <b>Howling Prime?</b></h2>
+          <hr id="hr1">
+          <br>
+          <article>
+              A <b>howling prime</b> is a prime number if the sum of its digits is also a prime number.
+ <
+             
+          </article>
+          <br>
+         
+               <button onclick="switchTo('2').from('1')">Next</button>
+         
+         
+          </section>
+          
+          
+          <section id="sec2">
+          
+              <h1>
+                  Example
+                  <span id="staEg">1</span>
+              </h1>
+              <hr id="hr2">
+              <article>
+                <br>
+              <div id="e1">
+            
+                 <b>Input</b>: 113
+<br>
+                 
+<b>Output</b>: true [113 is a prime number, 1+1+3=5 is also a prime number]
+              </div>
+                
+
+<div id="e2">
+
+     <b>Input</b>: 89
+<br>
+<b>Output</b>: true [89 is a prime number, 8+9=17 is also a prime number]
+
+</div>
+
+<div id="e3">
+
+    <b>Input</b>: 19 
+<br>
+<b>Output</b>: false [19 is a prime number, but 1+9=10 is not a prime number]
+</div>
+<br>
+Example: &nbsp;
+    <button id="fe1" onclick="eg(1)" style="background-color: https://github.com/sadiqabubakar526/ff6f00;border:1px solid  https://github.com/sadiqabubakar526/ff6f00">1</button>
+    <button id="fe2" onclick="eg(2)">2</button>
+    <button id="fe3" onclick="eg(3)">3</button>
+<br><br>
+    <button onclick="switchTo('1').from('2')">Back</button>
+    <button onclick="switchTo('3').from('2')">Next</button>
+
+              </article>
+           </section>
+           <section id="sec3">
+           
+           <h1>Check</h1>
+          
+           <hr id="hr3">
+           <br>
+           
+               <article>
+              Enter a number in the input box below<br><br>
+                    <input type="number" placeholder="Eg- 89" oninput="Validate(this.value,1)" id="inpn1" />
+                    <p id="out1">Output appears here...</p>
+               </article>
+               
+    <button onclick="switchTo('2').from('3')">Back</button>
+    <button onclick="switchTo('4').from('3')">Next</button>
+           </section>
+           <section id="sec4">
+               <h1>Check in Range</h1>
+               <hr id="hr4"/>
+               <br>
+               <article>
+                   <input placeholder="from..." type="number" id="inpnf" />
+                   <br><br>
+                    <input placeholder="to..." type="number" id="inpnt" />
+                    <p id="out2">Output appears here...</p>
+               </article>
+               
+               <button onclick="switchTo('3').from('4')">Back</button>
+               <button onclick="rnge()">Check</button>
+           </section>
+           <section id="sec5">
+               <h1>More Codes</h1>
+               <hr id="hr5">
+               <br/>
+               <article>
+                                   <a href="Https://github.com/sadiqabubakar526/Meme-Express-App">Meme-Express-App</a>
+                   
+                     <a href="Https://github.com/sadiqabubakar526/Quiz-App">Quiz-App</a>
+                    
+                    <a href="Https://github.com/sadiqabubakar526/Weather-forecast">Weather-forecast</a>
+           
+             <a href="https://github.com/sadiqabubakar526/Vue-Contact-App">Vue-Contact-App</a>
+        
+        <a href="Https://github.com/sadiqabubakar526/Mood-detector">Mood-Detector</a>
+        
+        <a href="Https://github.com/sadiqabubakar526/All-Years-Calendar">All-Years-Calendar</a>
+        
+        <a href="Https://github.com/sadiqabubakar526/Periodic-Elements">Periodic-Elements</a>
+       
+        <a href="Https://github.com/sadiqabubakar526/My-Motherland"
+       >My-Motherland</a></a>
+        <br><br><br>
+               </article>
+           </section>
+           <section id="sec6">
+               <h1>Settings</h1>
+               <hr id="hr6">
+               <br>
+               <article id="art11">
+                   <h2>Font Settings</h2>
+                   <br>
+                   <button onclick="font(this)">Akaya Kanadaka
+
+</button><br><br>
+             <button onclick="font(this)">indie flower</button>
+            <br><br>
+              <button onclick="font(this)">Cute Font</button>
+           <br><br>
+              <button onclick="font(this)">Abel</button><br><br>
+               <button onclick="font(this)">Lobster</button><br><br>
+                <button onclick="font(this)">Quicksand</button>
+              
+               </article><br><br>
+           </section>
+           <section id="sec7">
+      <img src="dev/6.jpg" alt="developer" width="60%" class="center" style="border-radius:50px; display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+      
+              <hr> <h1>Developer</h1></hr>
+               <hr id="hr7"/>
+               <br>
+               <article id="prof">
+               <h1>SURAJ ABUBAKAR</h1>
+               <hr class="hrP">
+              <p id="sP1" style="text-align:left!important;padding-left: 50px">
+                  <br>
+                  Projects: 200<br>
+                  Badgets: 28<br>
+                  Skills: 13<br>
+                  certificates:12 <br>
+                  Experience: 6yrs<br>
+                  Education: Undergraduate<br>
+              </p>
+             
+               </article>
+               <br>
+                   <button onclick="window.open('https://github.com/sadiqabubakar526')">Visit Profile</button>
+           </section>
+        </main>
+        <footer id="footer">
+            
+        </footer>
+        <div id="splash">
+            <div id="sp">Howling Primes</div>
+            <div id="ldr"></div>
+            <span onclick="window.open('https://github.com/sadiqabubakar526')">&copy; 2020 SURAJ ABUBAKAR</span>
+        </div>
+          <script src="script.js"></script>
+    </body>
+</html>
